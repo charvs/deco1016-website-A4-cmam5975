@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="css/slides.css">
+
+  <title>Lovebird</title>
+</head>
+
+<nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">Lovebird</a>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#" class="nav-links">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Blog</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Testimonials</a>
+            </li>
+
+        </ul>
+    </nav>
+
+<body>
+
+  <section class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+          <form name="myform">
+          <div class="form-group">
+              <label for="myName">What is your first name?</label>
+              <br>
+              <input id="myName" name="myName" class="form-control" type="text" data-validation="required">
+              <span id="error_name" class="text-danger"></span>
+              <br>
+              <br>
+              <br>
+              <br>
+              <label for="lastname">What is your last name?</label>
+              <br>
+              <input id="lastname" name="lastname" class="form-control" type="text" data-validation="email">
+              <span id="error_lastname" class="text-danger"></span>
+          </div>
+          </form>
+
+        </li>
+        <li class="glide__slide">
+          <form name="myform">
+          <div class="form-group">
+              <label for="age">What is your age?</label>
+              <br>
+              <input id="age" name="age"  class="form-control" type="number" min="1" >
+              <span id="error_age" class="text-danger"></span>
+              <br>
+              <br>
+              <br>
+              <br>
+              <label for="dob">What is your date of birth?</label>
+              <br>
+              <input type="date" name="dob" id="dob" class="form-control">
+              <span id="error_dob" class="text-danger"></span>
+          </div>
+          </form>
+        </li>
+        <li class="glide__slide">
+          <form name="myform">
+          <div class="form-group">
+              <label for="gender">What is your gender?</label>
+              <br>
+              <select name="gender" id="gender" class="form-control">
+                  <option selected>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+              </select>
+              <span id="error_gender" class="text-danger"></span>
+              <br>
+              <br>
+              <br>
+              <br>
+              <label for="gender">Who would you like to date?</label>
+              <br>
+              <select name="gender" id="gender" class="form-control">
+                  <option selected>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+              </select>
+              <span id="error_gender" class="text-danger"></span>
+          </div>
+          </form>
+        </li>
+        <li class="glide__slide">
+          <form name="myform">
+
+          <div class="form-group">
+              <label for="phone">What is your phone number?</label>
+              <br>
+              <input type="text" id="phone" name="phone" class="form-control" >
+              <span id="error_phone" class="text-danger"></span>
+              <br>
+              <br>
+              <br>
+              <br>
+              <label for="disc">Provide a brief description about yourself.</label>
+              <br>
+              <textarea class="form-control" rows="3"></textarea>
+              <br>
+              <button id="submit" type="submit" value="submit" class="btn btn-primary center"><a href="endpoint/endpoint.html">Submit</button>
+
+              </form>
+
+          </div>
+        </li>
+      </ul>
+
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+      </div>
+
+    </div>
+
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet" data-glide-dir="=0">01</button>
+      <button class="glide__bullet" data-glide-dir="=1">02</button>
+      <button class="glide__bullet" data-glide-dir="=2">03</button>
+      <button class="glide__bullet" data-glide-dir="=3">04</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+  <script>
+    new Glide('.glide').mount()
+  </script>
+
+  <script type="text/javascript" src="js/signup.js"></script>
+
+
+</body>
+
+</html>
